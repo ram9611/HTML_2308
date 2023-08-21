@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>배경(background)</title>
+	
+	<style>
+		p{border:1px solid black;
+		  width: 500px;
+		  height: 150px;
+		  }
+		  
+		.back1{background: yellow;}
+		/*repeat: 바둑판식으로 정렬
+	      no-repeat : 이미지를 한장만 사용
+	      repeat-x: 이미지 x축 정렬
+	      repeat-y: 이미지 y축 정렬*/
+	      
+		.back2{background: aqua url(image/background.jpg) repeat;}
+		.back3{background: aqua url(image/background.jpg) no-repeat right top;}
+		.back4{background: #000 url(image/background.jpg) no-repeat 200px 30px;}
+		.back5{background: wheat url(image/background.jpg) no-repeat 100% 100%;}
+		.back6{background: violet url(image/background.jpg) no-repeat center}
+	</style>
+	</head>
+	<body>
+		<P class="back1">클래스1 만들기</P>
+		<P class="back2">클래스2 만들기</P>
+		<P class="back3">클래스3 만들기</P>
+		<P class="back4">클래스4 만들기</P>
+		<P class="back5">클래스5 만들기</P>
+		<P class="back6">클래스6 만들기</P>
+	</body>
+</html>
