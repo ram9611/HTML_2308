@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>마진(Margin) : 바깥쪽 여백</title>
+	<style>
+		/*body영역의 모든 태그의 마진값을 제거한다*/
+		*{margin:0;}
+		p{border:solid red;
+			background: green;}
+		.box1{margin:20px;}/*상하좌우*/
+		.box2{margin:20px 50px}/*상하 좌우*/
+		.box3{margin:20px 50px 30px;}/*상 좌우 하*/
+		.box4{margin:20px 30px 50px 70px;}/*상 우 하 좌*/
+	</style>
+	</head>
+	<body>
+		<p class="box1">마진 테스트1</p>
+		<p class="box2">마진 테스트2</p>
+		<p class="box3">마진 테스트3</p>
+		<p class="box4">마진 테스트4</p>
+		
+		<div>
+			안녕
+		</div>
+		<div>
+			안녕
+		</div>
+	</body>
+</html>
