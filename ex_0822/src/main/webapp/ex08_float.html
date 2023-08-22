@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>float을 통한 2단짜리 틀 만들기</title>
+		<style>
+			*{margin: 0; padding: 0;}
+			#wrap{margin: 0; auto;
+			      width: 500px;
+			      border: 5px solid orangered;
+			      background: black;}
+			      
+			#header{width: 500px;
+			      background: blue;
+			      margin-bottom: 10px;
+			      text-align: center;
+			      padding: 10px 0;
+			      color: white;}
+			      
+			#bottom{width: 500px;
+					background: blue;
+					text-align: center;
+					color: white;
+					padding: 10px 0;}
+					
+			#content{width: 500px;
+					background: grey;
+					margin-bottom: 10px;
+					overflow: hidden;}
+					
+			#left{float: left;
+				  width:180px;
+				  background: #fcf;
+				  padding: 10px;}
+				  
+			#right{float: right;
+				   width: 180px;
+				   background: yellow;
+				   padding: 10px;
+			}
+					
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="wrap">
+			
+			<div id="header">
+				<p>나는 트로트가 싫어요</p>
+			</div>
+			
+			<div id="content">
+				<div id="left">
+					<p>울할머니 등에 업혀 살때 들려오던 그 노래들
+						아버지 술 한 잔 걸치시면 단골 레파토리
+						오오 지겨워서 싫어 촌스러운 뻔한 멜로디
+					</p>
+				</div>
+				
+				
+				<div id="right">
+					<p>울할머니 등에 업혀 살때 들려오던 그 노래들
+						아버지 술 한 잔 걸치시면 단골 레파토리
+						오오 지겨워서 싫어 촌스러운 뻔한 멜로디
+					</p>
+				</div>
+				
+			</div>
+			
+			<div id="bottom">
+				<p>술이 한잔 생각나는 밤</p>
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>링크(a)태그의 가상클래스</title>
+	<style>
+		a{text-decoration: none;/*링크의 밑줄 제거*/
+		  color: gray;}
+		  
+		 /*마우스 오버 감지*/
+		a:hover{color: orange;
+		        text-decoration: underline;}
+		
+		/*마우스 클릭을 감지*/
+		a:active{color: red;
+				 text-decoration: line-through;}
+				 
+		/*hover, active를 동시에 사용하려면
+		  반드시 hover가 active보다 위쪽에 정의되어 있어야 한다.*/
+		
+	</style>
+	</head>
+	<body>
+		<a href="#">메뉴1</a><br>
+		<a href="#">메뉴2</a><br>
+		<a href="#">메뉴3</a><br>
+	</body>
+</html>

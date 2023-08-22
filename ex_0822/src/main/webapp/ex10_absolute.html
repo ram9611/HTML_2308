@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>absolute</title>
+		
+		<style>
+			*{margin: 0; padding:0;}
+			
+			.box{width:250px;
+			     border:1px solid red;
+			     position: relative;}
+			     
+			 p{width: 130px; height: 80px;
+			   padding: 10px;
+			   font-weight: bold;}
+			   
+			 .red{background: red;}
+			 
+			 .blue{background: blue;
+			 	   position: absolute;
+			 	   left: 200px; top: 100px;}
+			 
+			 .green{background: green;}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p class="red">앱솔루트 테스트</p>
+			<p class="blue">앱솔루트 테스트</p>
+			<p class="green">앱솔루트 테스트</p>
+		</div>
+	</body>
+</html>

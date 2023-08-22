@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		p{border: 1px solid black;
+		  width: 150px;
+		  height: 70px;
+		  padding: 5px;}
+		  
+		  /*지정된 영역 안에서만 내용이 보이도록 처리*/
+		  .of1{overflow: hidden;}
+		  
+		  /*내용의 길이와 관계없이 무조건 보여주는 스크롤 상자*/
+		  .of2{overflow: scroll;}
+		  
+		  /*내용이 넘칠때만 스크롤 상자를 보여준다.*/
+		  .of3{overflow:auto;}
+		  
+		  /*상자 사이즈와 관계없이 무조건 모든 내용을 다 표시(default값)*/
+		  .of4{overflow: visible;}
+	</style>
+	</head>
+	<body>
+		<p class="of1">
+			iam the corea tiadklf djh your not alonge this is it sddkjfkldsa the monkey is the aniamald
+		</p>
+		
+		<p class="of2">
+			iam the corea tiadklf djh your not alonge this is it sddkjfkldsa the monkey is the aniamald
+		</p>
+		
+		<p class="of3">
+			iam the corea tiadklf djh your not alonge this is it sddkjfkldsa the monkey is the aniamald
+		</p>
+		
+		<p class="of4">
+			iam the corea tiadklf djh your not alonge this is it sddkjfkldsa the monkey is the aniamald
+		</p>
+	</body>
+</html>
