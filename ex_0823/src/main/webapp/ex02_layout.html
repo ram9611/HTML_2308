@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>layout 디자인하기</title>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		
+		<style>
+			body{width: 960px; margin: 0 auto;}
+			#header{position: relative;
+					height: 150px;
+					}
+					
+			#header #hgroup{position: absolute; left: 5px; top: 10px;}
+			
+			#header ul li{float: left;}
+			/*---a1---*/
+			#a1{position: absolute; right: 0; top: 3px;}
+			#a1 ul{overflow: hidden;}
+			#a1 ul li{border-right: 1px solid gray;
+					  border-bottom: 1px solid gray;
+					  border-top: 1px solid gray;}
+			#a1 ul li:first-child{border-left: 1px solid gray;}
+			
+			#a1 ul li a{display: block; padding: 2px 10px; color: darkgrey;}
+			#a1 ul li a:hover{background: #999; color: peachpuff;}
+			/*---a1---*/
+			
+			/*---a2---*/
+			#a2{position: absolute; right: 0; bottom: 0;}
+			#a2 ul{overflow: hidden;}
+			
+			#a2 ul li{border-right: 1px solid gray;
+					  border-bottom: 1px solid gray;
+					  border-top: 1px solid gray;}
+			#a2 ul li:nth-child(1){border-left: 1px solid gray;}
+			
+			#a2 ul li a{display: block; padding: 2px 10px; color: darkgrey;}
+			#a2 ul li{width: 100px;
+			          text-align: center;}
+			#a2 ul li a:hover{background: #999; color: peachpuff;}
+			/*---a2---*/
+			
+			
+			#content{width: 900px;
+					 overflow: hidden;
+					 margin-top: 10px;}
+					 
+			#section{width: 750px; float: left;}
+			#section .con{margin-bottom: 10px;
+						  padding: 20px;
+						  border: 1px solid dimgray;}
+						  
+						  
+			#aside{width: 200px;
+				   float: right;}
+			
+			#section2{border: 1px solid #999;
+					  padding: 10px;
+					  height: 300px;}
+		</style>
+		
+	</head>
+	<body>
+		<div id="header">
+			<div id="hgroup">
+				<h1>Rint Development</h1>
+				<h2>HTML+CSS</h2>
+			</div>
+			
+			<div id="a1">
+				
+				<ul>
+					<li><a href="#">WEB</a></li>
+					<li><a href="#">MOBILE</a></li>
+					<li><a href="#">GAME</a></li>
+					<li><a href="#">SIMULATOR</a></li>
+					<li><a href="#">DATA</a></li>
+				</ul>
+			</div>
+			
+			<div id="a2">
+				<ul>
+					<li><a href="https://www.naver.com">HTML</a></li>
+					<li><a href="https://www.naver.com" target="_blank">CSS</a></li>
+					<li><a href="#">JavaScript</a></li>
+					<li><a href="#">jQuery</a></li>
+					<li><a href="#">JSP</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div id="content">
+				<div id="section">
+					<div class="con">
+						<h2>Main Article</h2>
+						<p>rkskekfkakqktk</p>
+					</div>
+					
+					<div class="con">
+						<h2>Main Article</h2>
+						<p>rkskekfkakqktk</p>
+					</div>
+					
+					<div class="con">
+						<h2>Main Article</h2>
+						<p>rkskekfkakqktk</p>
+					</div>
+					
+					<div id="aside">
+						<div id="section2">
+							<h2>Side Contents</h2>
+							<p>I am a side</p>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+	</body>
+</html>
