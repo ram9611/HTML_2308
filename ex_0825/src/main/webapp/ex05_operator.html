@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>논리 연산자</title>
+		
+		<script>
+			//논리 연산자: 비교 연산을 통한 연산이 두 개 이상 필요한 경우 연결을 위한 연산자
+			let age=prompt("나이를 입력하세요");
+			let loc=prompt("지역");
+			
+			//&&(and)연산자 : 두 조건이 모두 만족하는 경우를 판단
+			//&&연산의 앞의 연산이 거짓일 때 뒤쪽의 연산을 수행하지 않는다.
+			//true&&true : true
+			//true&&false : false
+			//false&&true : false
+			//false&&false : false
+			
+			let res= loc=='마포' && ++age>=20; 
+			document.write("age: " +age,'<br>');
+			document.write(res);
+			
+			document.write('<hr>');
+			
+			//||(or)연산자 : 두개의 조건 중 한개만 만족해도 참을 반환
+			//true || true : true
+			//true || false : true
+			//false || true : true
+			//false || false : false
+			res=loc=='신촌' || ++age>=20;
+			document.write("age : "+age+'<br>');
+			document.write(res);
+			
+			document.write("<hr>");
+			
+			//!(not)연산자 : true와 false의 값을 반대로 바꿔주는 연산자
+			let c=false;
+			document.write(!c,'<br>');
+			document.write(c);
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

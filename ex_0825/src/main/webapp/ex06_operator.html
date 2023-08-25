@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		
+		<script>
+			//prompt를 통해 국,영,수 점수를 각각 입력받는다	
+			
+			let Korean=prompt("국어 점수를 입력하세요");
+			let English=prompt("영어 점수를 입력하세요");
+			let Math=prompt("수학 점수를 입력하세요");
+			
+			let a=Number(Korean);
+			let b=Number(English);
+			let c=Number(Math);
+			
+			
+			let total=a+b+c;
+			let avr=total/3;
+			
+			document.write("국어: "+a,'<br>');
+			document.write("영어: "+b,'<br>');
+			document.write("수학: "+c,'<br>');
+			document.write("총점: "+total,'<br>');
+			document.write("평균: "+avr.toFixed(2),'<br>');
+			
+		</script>
+	</head>
+	
+	<body>
+		
+	</body>
+</html>
